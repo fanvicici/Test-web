@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>简单网页-吴亦凡</title>
+    <style type="text/css">
+    body{text-align:center;}
+    tr{font-family: "宋体",Tahoma;font-size: 9pt;text-align: left;}
+    #td1{text-align: center;font-family: 黑体;font-size: 22px;color: #d10000 ;
+    line-height: 30px;padding: 8px 10px 15px 10px;}
+    #p1{text-align: right;}
+    #p2{text-indent: 2em;}
+    #td2{text-align: left;vertical-align: top;font-family: 宋体;font-size: 14px;color: #333333;line-height: 26px;}
+    </style>
+    <script language="javascript">
+        function doZoom(size) {   //改变字号
+            document.getElementById('zoom').style.fontSize=size+'px';
+        }
+        function ChangeColor(ColorName) {   //改变颜色
+          document.getElementById("c").style.background=ColorName;  
+        }
+    </script>
+</head>
+<body>
+    <table width="100%" style="border: 1px solid rgba(156, 95, 226, 0.333)">
+        <tr>
+            <td item-width="80%" style="padding:30px 40px;">
+            <table id="c">
+                <tr><td id="td1">吴亦凡那些励志的话</td></tr>
+                <tr>
+                    <td item-height="28" align="center">
+                        <span>日期：2018-7-26</span>
+                        <span>来源：MGN工作室</span>
+                        <span>浏览次数:</span>
+                        <span>
+                            <a href='javascript:doZoom(16)'>大</a>
+                            <a href='javascript:doZoom(14)'>中</a>
+                            <a href='javascript:doZoom(12)'>小</a>
+                        </span>
+                        <span style="padding-left: 10px">视力保护色:
+                            <input onclick="ChangeColor('#F9F6AF')" type="image" src="" height="13" width="13">
+                            <input onclick="ChangeColor('#9DDBF4')" type="image" src="" height="13" width="13">
+                            <input onclick="ChangeColor('#F9D1D9')" type="image" src="" height="13" width="13">
+                            <input onclick="ChangeColor('#DEDEDE')" type="image" src="" height="13" width="13">
+                            <input onclick="ChangeColor('#E4C8F8')" type="image" src="" height="13" width="13">
+                            <input onclick="ChangeColor('#FFFFFF')" type="image" src="" height="13" width="13">
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="td2">
+                        <div id=zoom>
+                            <p id="p2">知世故而不世故，才是最善良的成熟.有些人一旦离开，思念更深，有些情一旦失去，刻骨铭心，因为你认真过，动心过，深爱过，最后却不得不错过，因为你拥有过，投入过，感动过，最后却只剩回忆了</p>
+                            <p id="p2">“当时如果再加把劲就成功了。”因此后悔至极、懊恼不已。成功者和不成功者的差别，其实就在于此。” by稻盛和夫《活法：青少年版》</p>
+                            <p id="p1">MGN工作室fanvicici审稿</p>
+                            <p id="p1">2018年7月26日</p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
